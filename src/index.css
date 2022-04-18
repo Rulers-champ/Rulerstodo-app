@@ -1,13 +1,133 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0px;
+  padding:0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+  position: relative;
 }
+
+header{
+  padding:1rem;
+  background-color: #FFF323;
+  color:#fff;
+  
+}
+
+header h1{
+  border: #000;
+}
+
+.input-box{
+  
+  text-align: center;
+  padding:2.5rem 0rem;
+}
+.input-text{
+  margin-top: 0.5rem;
+  width:35%;
+  padding:0.5rem 0.2rem;
+  outline:none;
+  resize:none;
+  border-radius: 5px;
+  box-shadow:1px 1px 2px 2px #333;
+}
+
+textarea:is(:focus,:valid)
+{
+  border:none;
+}
+textarea::-webkit-scrollbar{
+  width:0px;
+}
+
+input{
+  width:35%;
+  padding:0.5rem 0.2rem;
+  border-radius: 5px;
+  box-shadow:2px 2px 2px 2px #333;
+  font-family: 'Fredoka', sans-serif;
+}
+input:is(:focus,:valid)
+{
+  border:none;
+}
+.pinned-section{
+  border-bottom: 2px dashed #333;
+  
+ 
+}
+
+.others-grid,.pinned-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 1em;
+  grid-row-gap:1em;
+  padding: 1.5rem 1.5rem;
+}
+
+.btn{
+  margin:1.5rem;
+  padding:0.6rem  2.2rem;
+  border:1px solid #000;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2rem;
+
+}
+
+.btn:hover{
+  background-color: #8267BE;
+  color:#fff;
+  border:none;
+}
+
+.subheading{
+  font-size:0.8rem;
+  color:#606060;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+
+}
+.main-subheading{
+  font-size: 2rem;
+  color:#A0A0A0;
+  text-align: center;
+  margin-top:1.2rem;
+}
+
+.update-section{
+  
+  position: absolute;
+  
+  background-color: #95D1CC;
+
+  width:500px;
+  height:400px;
+  top:80%;
+  left:35%;
+  border-radius: 8px;
+  opacity: 1;
+ 
+}
+.main-section{
+  opacity:0.2;
+}
+
+
+.update-section .input-text{
+  width:80%;
+  box-shadow: none;
+}
+.update-section .input-title{
+  width:80%;
+  box-shadow: none;
+}
+
+.update-section .btn:hover{
+  background-color: #E8630A;
+}
+
